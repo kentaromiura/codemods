@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expected output is correct 1`] = `
+"
+    /* @flow */
+    import React, { Component } from 'react';
+    import PropTypes from 'prop-types';
+
+    export type Props = { foo?: boolean };
+
+    export class Test extends Component {
+        constructor(props: Props) {
+            super(props);
+        }
+        props: Props;
+
+        static defaultProps = {
+            foo: false
+        };
+    }
+
+    function Hello(props){
+        return <div>Hello {props.name}</div>;
+    }
+
+    Hello.defaultProps = {name:\\"World\\"};
+
+    export class Test1 extends Component {
+        constructor(props: Props) {
+            super(props);
+        }
+        props: Props;
+        static defaultProps = {
+            foo: true
+        };
+    }"
+`;
